@@ -20,7 +20,7 @@ node('master') {
     
     stage('Install Dependencies') {
       sh 'yarn'
-      sh 'yarn build test'
+      sh 'yarn test-build'
       /*nodejs(nodeJSInstallationName: 'node') {
         sh 'yarn'
         sh 'yarn build'
