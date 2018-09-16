@@ -36,6 +36,8 @@ node('master') {
         app.push()
       }
     }
+  } catch(err) {
+    throw err
   }
  
 }
